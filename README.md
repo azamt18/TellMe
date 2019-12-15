@@ -1,2 +1,3 @@
 # TellMe
-A project by team "Turist Apteka"
+
+Проект разработанный командой "Turist Apteka"
