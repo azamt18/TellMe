@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+</head>
+<body>
+
+  <div class="container visible" id="preloader">
+  <div class="item-1"><div></div></div>
+  <div class="item-2"><div></div></div>
+  <div class="item-3"><div></div></div>
+  <div class="item-4"><div></div></div>
+  <div class="item-5"><div></div></div>
+  <div class="item-6"><div></div></div>
+  <div class="item-7"><div></div></div>
+  <div class="item-8"><div></div></div>
+  <div class="item-9"><div></div></div>
+</div>
+
+<form id="regForm">
+
+<!-- <h1>Tell Me:</h1> -->
+
+<!-- One "tab" for each step in the form: -->
+<div class="tab">
+    <div class="front_human">
+        <img src="front_human.png" alt="">
+        <div class="selected_part front head" name="front_head"></div>
+        <div class="selected_part front body" name="front_body"></div>
+        <div class="selected_part front right_hand" name="front_right_hand"></div>
+        <div class="selected_part front left_hand" name="front_left_hand"></div>
+        <div class="selected_part front legs" name="front_legs"></div>
+      </div>
+      <div class="back_human">
+        <img src="back_human.png" alt="">
+        <div class="selected_part back head" name="back_head"></div>
+        <div class="selected_part back body" name="back_body"></div>
+        <div class="selected_part back right_hand" name="back_right_hand"></div>
+        <div class="selected_part back left_hand" name="back_left_hand"></div>
+        <div class="selected_part back legs" name="back_legs"></div>
+        <div class="bgbh"></div>
+      </div>
+</div>
+
+<div class="tab" id="part">
+</div>
+
+<div class="tab" >Выберите симптомы:
+  <div id="simptomsList" style="overflow-y: auto; height: 410px;">
+  <!-- -- <div class="inputGroup">
+    <input id="option1" name="option1" type="checkbox"/>
+    <label for="option1">Симптом 1</label>
+  </div> -->
+  </div>
+</div>
+
+<div class="tab">
+  <h3>Результат:</h3>
+  <p id="resultBodyText"> </p>
+  <p id="resultSimptomText">Симптомы: </p>
+  <main>
+    <ol class="gradient-list" id="simptomResultList">
+ 
+    </ol>
+  </main>
+</div>
+</form>
+
+<div class="buttons" style="overflow:auto;">
+    <button type="button" class="toreverse" id="toreverse">Перевернуть</button>  
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
